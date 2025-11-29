@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produk — EcoShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Toko Mini Online</a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="products.html">Produk</a>
+        <a href="cart.html" class="cart-link">Keranjang <span id="cart-count" class="badge">0</span></a>
+      </nav>
+      <button id="mobile-menu-btn-2" class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Cari produk..." />
+      <select id="sort">
+        <option value="default">Urut: Default</option>
+        <option value="price-asc">Harga naik</option>
+        <option value="price-desc">Harga turun</option>
+      </select>
+    </section>
+
+    <section id="product-list" class="grid"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year2"></span> TOKO MINI ONLINE</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year2').innerText=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keranjang — EcoShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Toko Mini Online</a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="products.html">Produk</a>
+        <a href="cart.html" class="cart-link">Keranjang <span id="cart-count" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Keranjang Belanja</h2>
+
+    <div id="cart-empty" class="muted">Keranjang kosong — tambahkan produk terlebih dahulu.</div>
+
+    <table id="cart-table" class="cart-table hidden">
+      <thead>
+        <tr><th>Produk</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="cart-summary" class="summary hidden">
+      <p>Total item: <span id="total-items">0</span></p>
+      <p>Subtotal: Rp <span id="subtotal">0</span></p>
+      <div class="summary-actions">
+        <a href="products.html" class="btn outline">Lanjut Belanja</a>
+        <a href="checkout.html" class="btn primary">Checkout</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year3"></span> TOKO MINI ONLINE</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year3').innerText=new Date().getFullYear();</script>
+</body>
+</html>

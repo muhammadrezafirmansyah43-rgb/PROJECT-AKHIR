@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — EcoShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Toko Mini Online</a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="products.html">Produk</a>
+        <a href="cart.html" class="cart-link">Keranjang <span id="cart-count" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Checkout</h2>
+
+    <div id="checkout-empty" class="muted">Keranjang kosong — tidak bisa checkout.</div>
+
+    <form id="checkout-form" class="checkout hidden">
+      <div class="form-row">
+        <label>Nama lengkap</label>
+        <input id="name" type="text" required />
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input id="email" type="email" required />
+      </div>
+
+      <div class="form-row">
+        <label>Alamat pengiriman</label>
+        <input id="address" type="text" required />
+      </div>
+
+      <div class="form-row">
+        <label>Kode promo (opsional)</label>
+        <input id="promo" type="text" placeholder="PELAJAR10" />
+      </div>
+
+      <div class="form-row">
+        <p>Total bayar: <b>Rp <span id="total-pay">0</span></b></p>
+      </div>
+
+      <div class="form-row">
+        <button class="btn primary" type="submit">Bayar</button>
+        <button class="btn outline" type="button" id="clear-cart">Batal</button>
+      </div>
+
+      <div id="checkout-msg" class="muted"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year4"></span> TOKO MINI ONLINE</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year4').innerText=new Date().getFullYear();</script>
+</body>
+</html>
