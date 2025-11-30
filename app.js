@@ -8,20 +8,19 @@
 const PRODUCTS = [
  { id: 1, name: "Air Mineral 600ml", price: 5000, img: "img/mineral.jpg", stock: 30 },
   { id: 2, name: "Teh Botol", price: 4500, img: "img/teh.jpg", stock: 25 },
-  { id: 3, name: "Kopi Kaleng", price: 8500, img: "img/kopi.jpg", stock: 22 },
+  { id: 3, name: "Kopi Kaleng", price: 5500, img: "img/kopi.jpg", stock: 22 },
   { id: 4, name: "Mie Instan Goreng", price: 3500, img: "img/mie goreng.jpg", stock: 50 },
   { id: 5, name: "Mie Instan Kuah", price: 3500, img: "img/mie kuah.jpg", stock: 48 },
-  { id: 6, name: "Keripik Kentang", price: 12000, img: "img/kentang.jpg", stock: 20 },
-  { id: 7, name: "Coklat Batang", price: 10000, img: "img/coklat batang.jpg", stock: 18 },
-  { id: 8, name: "Wafer Coklat", price: 7000, img: "img/wafer coklat.jpg", stock: 35 },
-  { id: 9, name: "Sabun Cuci Piring", price: 9000, img: "img/cuci piring.jpg", stock: 15 },
-  { id: 10, name: "Biskuit Kelapa", price: 8000, img: "img/biskuit.jpg", stock: 40 },
-
+  { id: 6, name: "Keripik Kentang", price: 6000, img: "img/kentang.jpg", stock: 20 },
+  { id: 7, name: "Coklat Batang", price: 7500, img: "img/coklat batang.jpg", stock: 18 },
+  { id: 8, name: "Wafer Coklat", price: 2000, img: "img/wafer coklat.jpg", stock: 35 },
+  { id: 9, name: "Sabun Cuci Piring", price: 5500, img: "img/cuci piring.jpg", stock: 15 },
+  { id: 10, name: "Biskuit Kelapa", price: 4000, img: "img/biskuit kelapa.jpg", stock: 40 },
   { id: 11, name: "Sabun Mandi", price: 6000, img: "img/sabun mandi.jpg", stock: 25 },
-  { id: 12, name: "Shampoo Sachet", price: 2000, img: "img/shampo.jpg", stock: 60 },
-  { id: 13, name: "Pasta Gigi 75g", price: 15000, img: "img/odol.jpg", stock: 17 },
-  { id: 14, name: "Tissue 50 lembar", price: 6000, img: "img/tissue.jpg", stock: 25 },
-  { id: 15, name: "Detergen Bubuk 300g", price: 14000, img: "img/sabun bubuk.jpg", stock: 20 },
+  { id: 12, name: "Shampoo Sachet", price: 500, img: "img/shampo.jpg", stock: 60 },
+  { id: 13, name: "Pasta Gigi 75g", price: 8000, img: "img/odol.jpg", stock: 17 },
+  { id: 14, name: "Tissue 50 lembar", price: 4500, img: "img/tissue.jpg", stock: 25 },
+  { id: 15, name: "Detergen Bubuk 300g", price: 4000, img: "img/sabun bubuk.jpg", stock: 20 },
 
 
 ];
